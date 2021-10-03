@@ -12,7 +12,7 @@ const {
   description,
   background,
   uniqueDnaTorrance,
-  layerConfigurations,
+  layerConfigurations, 
   rarityDelimiter,
 } = require(path.join(basePath, "/src/config.js"));
 const console = require("console");
@@ -116,11 +116,20 @@ const addMetadata = (_dna, _edition) => {
 
 const addAttributes = (_element) => {
   let selectedElement = _element.layer.selectedElement;
+
+  const health = Math.floor(Math.random() * 100) + 1;
+  const defense = Math.floor(Math.random() * 100) + 1;
+  const attack = Math.floor(Math.random() * 100) + 1;
+
   attributesList.push({
     trait_type: _element.layer.name,
     value: selectedElement.name,
   });
+  attributesList.push({'HEALTH': health})
+  attributesList.push({'DEFENSE': defense})
+  attributesList.push({'ATTACK': attack})
 };
+
 
 const loadLayerImg = async (_layer) => {
   return new Promise(async (resolve) => {

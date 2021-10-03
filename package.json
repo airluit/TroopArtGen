@@ -1,7 +1,7 @@
 {
-  "name": "hashlips_art_engine",
+  "name": "goat_troops_engine",
   "version": "1.0.0",
-  "description": "HashLips Art Engine is a tool used to create multiple different instances of artworks based on provided layers.",
+  "description": " Goat Troops Infantry is a collection of 13,000 Goats training on the Ethereum blockchain. .",
   "main": "index.js",
   "bin": "index.js",
   "pkg": {
@@ -18,7 +18,7 @@
     "build": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Daniel Eugene Botha (HashLips)",
+  "author": "AirLuit",
   "license": "MIT",
   "dependencies": {
     "canvas": "^2.8.0",
